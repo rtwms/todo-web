@@ -17,6 +17,7 @@ def complete_todo():
             if bool(st.session_state[xx]):
                 print(f'removing {todos[idx]}')
                 todos.remove(todos[idx])
+                break
     functions.save_todos(todos)
 
 
